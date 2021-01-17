@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListeningActivity"
+    android:background="@drawable/gradient"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_logo"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp"
+        android:text="Listening..."
+        android:textColor="@color/design_default_color_background"
+        android:fontFamily="@font/mont_bold"
+        android:textAlignment="center"
+        android:textSize="40dp"/>
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/test_btn"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="87dp"
+        android:layout_marginLeft="110dp"
+
+        android:backgroundTint="@color/design_default_color_background"
+        android:fontFamily="@font/mont_bold"
+        android:text="Take a break"
+        android:textAllCaps="false"
+        android:textColor="@color/carrot"
+        android:textSize="20dp"
+        app:cornerRadius="30dp" />
+
+</LinearLayout>

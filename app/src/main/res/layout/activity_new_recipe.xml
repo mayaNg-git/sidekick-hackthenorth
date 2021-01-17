@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewRecipeActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:background="@drawable/round"
+        android:text="New Recipe"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="36dp"
+        android:paddingLeft="27dp"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/mont_bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Title"
+        android:paddingLeft="27dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/mont_font"/>
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="357dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="27dp"
+        android:background="@drawable/search_bar"
+        android:backgroundTint="#FBEBDF"
+        android:layout_gravity="center"
+        android:hint="What are you making?"
+        android:textColorHint="#F1B183"
+        android:fontFamily="@font/mont_font"
+      />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ingredient"
+        android:paddingLeft="27dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/mont_font"/>
+    <EditText
+        android:id="@+id/ingredient_text"
+        android:layout_width="357dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="27dp"
+        android:background="@drawable/search_bar"
+        android:backgroundTint="#FBEBDF"
+        android:layout_gravity="center"
+        android:hint="Enter your first ingredient"
+        android:textColorHint="#F1B183"
+        android:fontFamily="@font/mont_font"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_ingredient_btn"
+        android:layout_height="45dp"
+        android:layout_width="357dp"
+        android:layout_marginTop="10dp"
+        android:text="+ Add Ingredient"
+        android:textColor="@color/carrot"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        app:cornerRadius="30dp"
+        android:backgroundTint="#F5C9A9"
+        android:layout_marginLeft="27dp"
+        android:fontFamily="@font/mont_bold"
+
+        />
+<!--    app:icon="@drawable/ic_icons8_search"-->
+<!--    app:iconGravity="textStart"-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Direction"
+        android:paddingLeft="27dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/mont_font"
+        />
+    <EditText
+        android:id="@+id/direction_text"
+        android:layout_width="357dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="27dp"
+        android:background="@drawable/search_bar"
+        android:backgroundTint="#FBEBDF"
+        android:layout_gravity="center"
+        android:hint="Enter your recipe's first step"
+        android:textColorHint="#F1B183"
+        android:fontFamily="@font/mont_font"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_direction_btn"
+        android:fontFamily="@font/mont_bold"
+        android:layout_height="45dp"
+        android:layout_width="357dp"
+        android:layout_marginTop="10dp"
+        android:text="+ Add Step"
+        android:textSize="15dp"
+        android:textColor="@color/carrot"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        app:cornerRadius="30dp"
+        android:backgroundTint="#F5C9A9"
+        android:layout_marginLeft="27dp"
+
+        />
+<!--        app:icon="@drawable/ic_icons8_search"-->
+<!--        -->
+<!--        app:iconGravity="textStart"-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_btn"
+        android:layout_height="60dp"
+        android:layout_width="190dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="87dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/carrot"
+        android:text="Save Recipe"
+        android:textAllCaps="false"
+        app:cornerRadius="30dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/mont_bold"
+        />
+
+<!--    <com.google.android.material.button.MaterialButton-->
+
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_width="190dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:backgroundTint="@color/carrot"-->
+<!--        android:text="Next Page"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="18dp"-->
+<!--        />-->
+<!--    <EditText-->
+<!--        android:id="@+id/testedit"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:hint="i'm here"-->
+<!--        android:background="@color/carrot"/>-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_marginTop="10dp"
+        android:background="@color/carrot"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</LinearLayout>
